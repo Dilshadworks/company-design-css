@@ -4,331 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radial-gradient/Linear Gradient</title>
+    <title>Comapny Design Banner</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<style>
-    body{
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-    .main__header{
-        background: url(./images/website-banner-background.jpg) center center no-repeat;
-        background-size: cover;
-        height: 100vh;
-        padding: 3rem;
-    }
-    .main__header--logo{
-        text-align: center;
-        padding-top: 3rem;
-        position: absolute;
-        top: -219px;
-    }
-    .widget__left{
-        float: left;
-        position: relative;
-        width: 515px;
-        height: 515px;
-        border: 1px solid #fff;
-        border-radius: 50%;
-        top: 18%;
-        left: 4%;
-    }
-    .widget__left_logo {
-        position: absolute;
-        top: 25%;
-        left: 25%;
-        width: 250px;
-        height: 250px;
-        border-radius: 100%;
-        animation: animation rotate(360deg) infinate;
-        animation: animation 4s infinite;
-        transform: rotate(360deg);
-        animation-direction: alternate;
-        border: outset;
-    }
-    .widget__left_logo--inner{
-        position: absolute;
-        padding: 62px;
-        border-radius: 50%;
-        -webkit-box-shadow: 4px 3px 44px 1px rgb(0 0 0 / 58%);
-        -moz-box-shadow: 4px 3px 44px 1px rgba(0,0,0,0.58);
-        left: 23.5%;
-        top: 23.5%;
-    }
-    .widget__left--circle {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        color: #fff;
-        justify-content: center;
-        font-family: system-ui;
-    }
 
-
-
-
-    @keyframes animation {
-        0% {
-            transform: rotate(360deg);
-        }
-        100% {
-            transform: rotate(-360deg);
-        }
-    }
-    .widget__left--php{
-        border-bottom: 6px solid #474A8A;
-        position: absolute;
-        left: 42%;
-        background-color: cornflowerblue;
-        top: -9%;
-       
-    }
-    .widget__left--paython {
-        background-color: #676e57;
-        border-bottom: 6px solid #516821;
-        position: absolute;
-        left: 10%;
-    }
-    .widget__left--html{
-        background-color: #f06529;
-        border-bottom: 6px solid #a93f25;
-        position: absolute;
-        left: -8%;
-        top: 24%;
-    }
-    .widget__left--c-plus{
-        background-color: #5E97D0;
-        border-bottom: 6px solid #044F88;
-        position: absolute;
-        top: 53%;
-        left: -7%;
-    }
-    .widget__left--javascript{
-        background-color: #F0DB4F;
-        border-bottom: 6px solid #938739;
-        position: absolute;
-        bottom: 4px;
-        left: 10%;
-    }
-    .widget__left--angular{
-        background-color: #dd1b16;
-        border-bottom: 6px solid #a6120d;
-        position: absolute;
-        bottom: -44px;
-        left: 41%;
-    }
-    .widget__left--ai {
-        background-color: cadetblue;
-        border-bottom: 6px solid #3e6048;
-        position: absolute;
-        right: 8%;
-        top: 0%;
-    }
-    .widget__left--react {
-        background-color: darkgoldenrod;
-        border-bottom: 6px solid gray;
-        position: absolute;
-        right: -8%;
-        top: 25%;
-    }
-    .widget__left--rxjs {
-        background-color: darkcyan;
-        border-bottom: 6px solid darkslategrey;
-        position: absolute;
-        right: -7%;
-        top: 53%;
-    }
-    .widget__left--java{
-        position: absolute;
-        bottom: 2%;
-        right: 10%;
-        background-color: blueviolet;
-        border-bottom: 6px solid indigo;
-    }
-
-
-
-    .widget-middle {
-        width: 40%;
-        float: left;
-    }
-    .circle--logo{
-        text-align: center;
-    }
-    .widget__quote{
-        padding-top: 35rem;
-        text-align: right;
-    }
-    .widget__quote--subtitle{
-        color: #474A8A;
-    }
-    h1{
-        font-family: system-ui;
-        font-size: 4rem;
-        text-align: center;
-        color: #002b4b;
-        margin-top: 82px;
-    }
-    p{
-        font-size: 2rem;
-        text-align: center;
-        color: #474a8a;
-        margin-top: 98px;
-        font-style: italic;
-        font-family: system-ui;
-    }
-    h2{
-        font-size: 5rem;
-        color: #002b4b;
-        font-family: system-ui;
-        margin: 0;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @keyframes skew {
-    0% {
-        transform: skewX(20deg);
-    }
-    100% {
-        transform: skewX(-20deg);
-    }
-}
-.widget-end{
-    position: relative;
-    width: 27%;
-    float: right;
-}
-.widget__one{
-    position: absolute;
-    top: -2%;
-    right: 94%;
-    animation: skew 4s infinite;
-    transform: skew(20deg);
-    animation-direction: alternate;
-}
-.widget__one--line{
-    border-left: 4px solid #474A8A;
-    height: 223px;
-    position: absolute;
-    right: 47%;
-    top: -31px;
-}
-.logo-rotate-one{
-    width: 100px;
-    border-radius: 50%;
-    transform: rotateZ(180deg);
-    position: absolute;
-    top: 187px;
-    right: -47px;
-}
-.widget__two{
-    position: absolute;
-    top: -2%;
-    right: 74%;
-    animation: skew 4s infinite;
-    transform: skew(20deg);
-    animation-direction: alternate;
-}
-.widget__two--line{
-    border-left: 4px solid #474A8A;
-    height: 300px;
-    position: absolute;
-    right: 47%;
-    top: -31px;
-}
-.logo-rotate-two{
-    width: 100px;
-    border-radius: 50%;
-    transform: rotateZ(180deg);
-    position: absolute;
-    top: 264px;
-    right: -47px;
-}
-.widget__three{
-    position: absolute;
-    top: -2%;
-    right: 54%;
-    animation: skew 4s infinite;
-    transform: skew(20deg);
-    animation-direction: alternate;
-}
-.widget__three--line{
-    border-left: 4px solid #474A8A;
-    height: 377px;
-    position: absolute;
-    right: 47%;
-    top: -31px;
-}
-.logo-rotate-three{
-    width: 100px;
-    border-radius: 50%;
-    transform: rotateZ(180deg);
-    position: absolute;
-    top: 341px;
-    right: -47px;
-}
-.widget__four{
-    position: absolute;
-    top: -2%;
-    right: 34%;
-    animation: skew 4s infinite;
-    transform: skew(20deg);
-    animation-direction: alternate;
-}
-.widget__four--line{
-    border-left: 4px solid #474A8A;
-    height: 454px;
-    position: absolute;
-    right: 47%;
-    top: -31px;
-}
-.logo-rotate-four{
-    width: 100px;
-    border-radius: 50%;
-    transform: rotateZ(180deg);
-    position: absolute;
-    top: 418px;
-    right: -47px;
-}
-
-    
-    .display--sunset{
-        background: radial-gradient(circle at 50% -5%, gold,#efeff1 66%,#9b5050 100%);
-        height: 250px;
-        width: 250px;
-        border-radius: 100%;
-        position: absolute;
-        right: 2%;
-        top: 10%;
-        opacity: 0.7;
-    }
-    .boat{
-        position: absolute;
-        right: 24%;
-        bottom: 45%;
-    }
-    .boat img{
-        width: 200px;
-    }
-    
-</style>
 <body>
     <div class="main__header">
+        <!-- Section Positioning Elements -->
         <div class="display--sunset"></div>
         <div class="boat">
             <img src="./images/boat.png">
@@ -355,59 +37,35 @@
         </div>
         <!-- Section Middle -->
         <div class="widget-middle">
-           
             <h1>Genesis Engineering</h1>
             <p><b>Bring your ideas to life!</b></p>
             <div class="circle--logo">
                 <img src="./images/circle.webp">
             </div>
         </div>
-    
-
-        
+        <!-- Section End -->
         <div class="widget-end">
-
             <div class="widget__one">
                 <div class="widget__one--line"></div>
                 <img class="logo-rotate-one" src="./images/genesis-new.png">
             </div>
-
             <div class="widget__two">
                 <div class="widget__two--line"></div>
                 <img class="logo-rotate-two" src="./images/genesis-new.png">
             </div>
-
             <div class="widget__three">
                 <div class="widget__three--line"></div>
                 <img class="logo-rotate-three" src="./images/genesis-new.png">
             </div>
-
             <div class="widget__four">
                 <div class="widget__four--line"></div>
                 <img class="logo-rotate-four" src="./images/genesis-new.png">
             </div>
-
-        <!-- <div class="widget__two">
-            <div class="widget__two--line"></div>
-            <img class="logo-rotate" src="./images/genesis-new.png">
+            <div class="widget__quote">
+                <h2>Professional</h2>
+                <h2 class="widget__quote--subtitle">Personal</h2>
+                <h2 class="widget__quote--subtitle" style="color: #015694 ;">Solutions</h2> 
+            </div>
         </div>
-
-        <div class="widget__four">
-            <div class="widget__three--line"></div>
-            <img class="logo-rotate" src="./images/genesis-new.png">
-        </div>
-
-        <div class="widget__four">
-            <div class="widget__four--line"></div>
-            <img class="logo-rotate" src="./images/genesis-new.png">
-        </div> -->
-        <div class="widget__quote">
-            <h2>Professional</h2>
-            <h2 class="widget__quote--subtitle">Personal</h2>
-            <h2 class="widget__quote--subtitle" style="color:#fff ;">Solutions</h2> 
-        </div>
-    </div>
-    <!-- ======== JavaScript =======-->
-    <script src="./js/shared.js"></script>
-</body>
+    </body>
 </html>
